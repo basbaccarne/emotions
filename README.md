@@ -12,6 +12,26 @@ Things to remember:
 * Enter the WiFi credentials in the document on the SD card (i prefer using a smartphone hotspot for this). Make sure you connect the computer with in oscillatr to the same network
 * Make sure the emotibit is not in hibernate mode (small swich on the board)
 
+Next up: set-up OSC connection
+
+## Emotion from webcam data
+Currently (sept 2025), two easily implementable open source approaches for streaming video data are available: (1) [deepface](https://github.com/serengil/deepface) and (2) [FER](https://github.com/JustinShenk/fer) (Facial Emotion Recognition).
+
+| Feature            | **DeepFace**                                                                 | **FER**                            |
+|--------------------|-------------------------------------------------------------------------------|----------------------------------------------------------------|
+| **Main Focus**     | Face recognition, verification, age, gender, emotion         | Emotion recognition only                                        |
+| **Emotions** | 7 basic emotions detected    | 7 basic emotions detected                          |
+| **Accuracy**       | Higher              | Moderate |
+| **Performance**    | Slower (can be optimized with GPU)             | Faster, lightweight, real-time or low-resource environments |
+| **Ease of Use**    | Higher complexity, but very flexible and powerful                             | Very simple API, easy to use                                    |
+| **Use Case**  | Complex face analysis (security, multi-feature analysis)            | Quick prototyping, real-time emotion detection |
+
+### Deepface
+
+
+
+## Emotion from microphone
+
 ## P5 experiment
 * Using https://p5js.org/
 * P5 used an index.html and sketch.js structure to run processing-like code in a browser
